@@ -6,54 +6,1189 @@
     <title>Tabla Periódica en AR</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://unpkg.com/aframe-gesture-handler@1.1.0/dist/gesture-handler.min.js"></script>
 </head>
 <body>
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-        <!-- Marcador para el Hidrógeno -->
+        <!-- Hidrógeno -->
         <a-marker type="pattern" url="markers/hidrogeno.patt">
             <a-entity
                 gltf-model="models/hidrogeno.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
                 scale="0.5 0.5 0.5"
                 position="0 0 0">
             </a-entity>
         </a-marker>
 
-        <!-- Marcador para el Helio -->
+        <!-- Helio -->
         <a-marker type="pattern" url="markers/helio.patt">
             <a-entity
                 gltf-model="models/helio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
                 scale="0.5 0.5 0.5"
                 position="0 0 0">
             </a-entity>
         </a-marker>
 
-         <!-- Litio -->
+        <!-- Litio -->
         <a-marker type="pattern" url="markers/litio.patt">
             <a-entity
                 gltf-model="models/litio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
                 scale="0.5 0.5 0.5"
                 position="0 0 0">
             </a-entity>
         </a-marker>
 
-	 <!-- Berilio -->
+        <!-- Berilio -->
         <a-marker type="pattern" url="markers/berilio.patt">
             <a-entity
                 gltf-model="models/berilio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
                 scale="0.5 0.5 0.5"
                 position="0 0 0">
             </a-entity>
         </a-marker>
 
-	 <!-- Boro -->
+        <!-- Boro -->
         <a-marker type="pattern" url="markers/boro.patt">
             <a-entity
                 gltf-model="models/boro.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
                 scale="0.5 0.5 0.5"
                 position="0 0 0">
             </a-entity>
         </a-marker>
 
+        <!-- Carbono -->
+        <a-marker type="pattern" url="markers/carbono.patt">
+            <a-entity
+                gltf-model="models/carbono.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Nitrógeno -->
+        <a-marker type="pattern" url="markers/nitrogeno.patt">
+            <a-entity
+                gltf-model="models/nitrogeno.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Oxígeno -->
+        <a-marker type="pattern" url="markers/oxigeno.patt">
+            <a-entity
+                gltf-model="models/oxigeno.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Flúor -->
+        <a-marker type="pattern" url="markers/fluor.patt">
+            <a-entity
+                gltf-model="models/fluor.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Neón -->
+        <a-marker type="pattern" url="markers/neon.patt">
+            <a-entity
+                gltf-model="models/neon.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Sodio -->
+        <a-marker type="pattern" url="markers/sodio.patt">
+            <a-entity
+                gltf-model="models/sodio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Magnesio -->
+        <a-marker type="pattern" url="markers/magnesio.patt">
+            <a-entity
+                gltf-model="models/magnesio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Aluminio -->
+        <a-marker type="pattern" url="markers/aluminio.patt">
+            <a-entity
+                gltf-model="models/aluminio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Silicio -->
+        <a-marker type="pattern" url="markers/silicio.patt">
+            <a-entity
+                gltf-model="models/silicio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Fósforo -->
+        <a-marker type="pattern" url="markers/fosforo.patt">
+            <a-entity
+                gltf-model="models/fosforo.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Azufre -->
+        <a-marker type="pattern" url="markers/azufre.patt">
+            <a-entity
+                gltf-model="models/azufre.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Cloro -->
+        <a-marker type="pattern" url="markers/cloro.patt">
+            <a-entity
+                gltf-model="models/cloro.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Argón -->
+        <a-marker type="pattern" url="markers/argon.patt">
+            <a-entity
+                gltf-model="models/argon.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Potasio -->
+        <a-marker type="pattern" url="markers/potasio.patt">
+            <a-entity
+                gltf-model="models/potasio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Calcio -->
+        <a-marker type="pattern" url="markers/calcio.patt">
+            <a-entity
+                gltf-model="models/calcio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Escandio -->
+        <a-marker type="pattern" url="markers/escandio.patt">
+            <a-entity
+                gltf-model="models/escandio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Titanio -->
+        <a-marker type="pattern" url="markers/titanio.patt">
+            <a-entity
+                gltf-model="models/titanio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Vanadio -->
+        <a-marker type="pattern" url="markers/vanadio.patt">
+            <a-entity
+                gltf-model="models/vanadio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Cromo -->
+        <a-marker type="pattern" url="markers/cromo.patt">
+            <a-entity
+                gltf-model="models/cromo.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Manganeso -->
+        <a-marker type="pattern" url="markers/manganeso.patt">
+            <a-entity
+                gltf-model="models/manganeso.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Hierro -->
+        <a-marker type="pattern" url="markers/hierro.patt">
+            <a-entity
+                gltf-model="models/hierro.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Cobalto -->
+        <a-marker type="pattern" url="markers/cobalto.patt">
+            <a-entity
+                gltf-model="models/cobalto.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Níquel -->
+        <a-marker type="pattern" url="markers/niquel.patt">
+            <a-entity
+                gltf-model="models/niquel.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Cobre -->
+        <a-marker type="pattern" url="markers/cobre.patt">
+            <a-entity
+                gltf-model="models/cobre.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Zinc -->
+        <a-marker type="pattern" url="markers/zinc.patt">
+            <a-entity
+                gltf-model="models/zinc.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Galio -->
+        <a-marker type="pattern" url="markers/galio.patt">
+            <a-entity
+                gltf-model="models/galio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Germanio -->
+        <a-marker type="pattern" url="markers/germanio.patt">
+            <a-entity
+                gltf-model="models/germanio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Arsénico -->
+        <a-marker type="pattern" url="markers/arsenico.patt">
+            <a-entity
+                gltf-model="models/arsenico.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Selenio -->
+        <a-marker type="pattern" url="markers/selenio.patt">
+            <a-entity
+                gltf-model="models/selenio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Bromo -->
+        <a-marker type="pattern" url="markers/bromo.patt">
+            <a-entity
+                gltf-model="models/bromo.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Kriptón -->
+        <a-marker type="pattern" url="markers/kripton.patt">
+            <a-entity
+                gltf-model="models/kripton.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Rubidio -->
+        <a-marker type="pattern" url="markers/rubidio.patt">
+            <a-entity
+                gltf-model="models/rubidio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Estroncio -->
+        <a-marker type="pattern" url="markers/estroncio.patt">
+            <a-entity
+                gltf-model="models/estroncio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Itrio -->
+        <a-marker type="pattern" url="markers/itrio.patt">
+            <a-entity
+                gltf-model="models/itrio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Circonio -->
+        <a-marker type="pattern" url="markers/circonio.patt">
+            <a-entity
+                gltf-model="models/circonio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Niobio -->
+        <a-marker type="pattern" url="markers/niobio.patt">
+            <a-entity
+                gltf-model="models/niobio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Molibdeno -->
+        <a-marker type="pattern" url="markers/molibdeno.patt">
+            <a-entity
+                gltf-model="models/molibdeno.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Tecnecio -->
+        <a-marker type="pattern" url="markers/tecnecio.patt">
+            <a-entity
+                gltf-model="models/tecnecio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Rutenio -->
+        <a-marker type="pattern" url="markers/rutenio.patt">
+            <a-entity
+                gltf-model="models/rutenio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Rodio -->
+        <a-marker type="pattern" url="markers/rodio.patt">
+            <a-entity
+                gltf-model="models/rodio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Paladio -->
+        <a-marker type="pattern" url="markers/paladio.patt">
+            <a-entity
+                gltf-model="models/paladio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Plata -->
+        <a-marker type="pattern" url="markers/plata.patt">
+            <a-entity
+                gltf-model="models/plata.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Cadmio -->
+        <a-marker type="pattern" url="markers/cadmio.patt">
+            <a-entity
+                gltf-model="models/cadmio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Indio -->
+        <a-marker type="pattern" url="markers/indio.patt">
+            <a-entity
+                gltf-model="models/indio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Estaño -->
+        <a-marker type="pattern" url="markers/estano.patt">
+            <a-entity
+                gltf-model="models/estano.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Antimonio -->
+        <a-marker type="pattern" url="markers/antimonio.patt">
+            <a-entity
+                gltf-model="models/antimonio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Telurio -->
+        <a-marker type="pattern" url="markers/telurio.patt">
+            <a-entity
+                gltf-model="models/telurio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Yodo -->
+        <a-marker type="pattern" url="markers/yodo.patt">
+            <a-entity
+                gltf-model="models/yodo.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Xenón -->
+        <a-marker type="pattern" url="markers/xenon.patt">
+            <a-entity
+                gltf-model="models/xenon.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Cesio -->
+        <a-marker type="pattern" url="markers/cesio.patt">
+            <a-entity
+                gltf-model="models/cesio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Bario -->
+        <a-marker type="pattern" url="markers/bario.patt">
+            <a-entity
+                gltf-model="models/bario.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Lantano -->
+        <a-marker type="pattern" url="markers/lantano.patt">
+            <a-entity
+                gltf-model="models/lantano.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Cerio -->
+        <a-marker type="pattern" url="markers/cerio.patt">
+            <a-entity
+                gltf-model="models/cerio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Praseodimio -->
+        <a-marker type="pattern" url="markers/praseodimio.patt">
+            <a-entity
+                gltf-model="models/praseodimio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Neodimio -->
+        <a-marker type="pattern" url="markers/neodimio.patt">
+            <a-entity
+                gltf-model="models/neodimio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Prometio -->
+        <a-marker type="pattern" url="markers/prometio.patt">
+            <a-entity
+                gltf-model="models/prometio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Samario -->
+        <a-marker type="pattern" url="markers/samario.patt">
+            <a-entity
+                gltf-model="models/samario.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Europio -->
+        <a-marker type="pattern" url="markers/europio.patt">
+            <a-entity
+                gltf-model="models/europio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Gadolinio -->
+        <a-marker type="pattern" url="markers/gadolinio.patt">
+            <a-entity
+                gltf-model="models/gadolinio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Terbio -->
+        <a-marker type="pattern" url="markers/terbio.patt">
+            <a-entity
+                gltf-model="models/terbio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Disprosio -->
+        <a-marker type="pattern" url="markers/disprosio.patt">
+            <a-entity
+                gltf-model="models/disprosio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Holmio -->
+        <a-marker type="pattern" url="markers/holmio.patt">
+            <a-entity
+                gltf-model="models/holmio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Erbio -->
+        <a-marker type="pattern" url="markers/erbio.patt">
+            <a-entity
+                gltf-model="models/erbio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Tulio -->
+        <a-marker type="pattern" url="markers/tulio.patt">
+            <a-entity
+                gltf-model="models/tulio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Iterbio -->
+        <a-marker type="pattern" url="markers/iterbio.patt">
+            <a-entity
+                gltf-model="models/iterbio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Lutecio -->
+        <a-marker type="pattern" url="markers/lutecio.patt">
+            <a-entity
+                gltf-model="models/lutecio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Hafnio -->
+        <a-marker type="pattern" url="markers/hafnio.patt">
+            <a-entity
+                gltf-model="models/hafnio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Tantalio -->
+        <a-marker type="pattern" url="markers/tantalio.patt">
+            <a-entity
+                gltf-model="models/tantalio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Wolframio -->
+        <a-marker type="pattern" url="markers/wolframio.patt">
+            <a-entity
+                gltf-model="models/wolframio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Renio -->
+        <a-marker type="pattern" url="markers/renio.patt">
+            <a-entity
+                gltf-model="models/renio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Osmio -->
+        <a-marker type="pattern" url="markers/osmio.patt">
+            <a-entity
+                gltf-model="models/osmio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Iridio -->
+        <a-marker type="pattern" url="markers/iridio.patt">
+            <a-entity
+                gltf-model="models/iridio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Platino -->
+        <a-marker type="pattern" url="markers/platino.patt">
+            <a-entity
+                gltf-model="models/platino.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Oro -->
+        <a-marker type="pattern" url="markers/oro.patt">
+            <a-entity
+                gltf-model="models/oro.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Mercurio -->
+        <a-marker type="pattern" url="markers/mercurio.patt">
+            <a-entity
+                gltf-model="models/mercurio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Talio -->
+        <a-marker type="pattern" url="markers/talio.patt">
+            <a-entity
+                gltf-model="models/talio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Plomo -->
+        <a-marker type="pattern" url="markers/plomo.patt">
+            <a-entity
+                gltf-model="models/plomo.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Bismuto -->
+        <a-marker type="pattern" url="markers/bismuto.patt">
+            <a-entity
+                gltf-model="models/bismuto.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Polonio -->
+        <a-marker type="pattern" url="markers/polonio.patt">
+            <a-entity
+                gltf-model="models/polonio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Astato -->
+        <a-marker type="pattern" url="markers/astato.patt">
+            <a-entity
+                gltf-model="models/astato.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Radón -->
+        <a-marker type="pattern" url="markers/radon.patt">
+            <a-entity
+                gltf-model="models/radon.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Francio -->
+        <a-marker type="pattern" url="markers/francio.patt">
+            <a-entity
+                gltf-model="models/francio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Radio -->
+        <a-marker type="pattern" url="markers/radio.patt">
+            <a-entity
+                gltf-model="models/radio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Actinio -->
+        <a-marker type="pattern" url="markers/actinio.patt">
+            <a-entity
+                gltf-model="models/actinio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Torio -->
+        <a-marker type="pattern" url="markers/torio.patt">
+            <a-entity
+                gltf-model="models/torio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Protactinio -->
+        <a-marker type="pattern" url="markers/protactinio.patt">
+            <a-entity
+                gltf-model="models/protactinio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Uranio -->
+        <a-marker type="pattern" url="markers/uranio.patt">
+            <a-entity
+                gltf-model="models/uranio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Neptunio -->
+        <a-marker type="pattern" url="markers/neptunio.patt">
+            <a-entity
+                gltf-model="models/neptunio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Plutonio -->
+        <a-marker type="pattern" url="markers/plutonio.patt">
+            <a-entity
+                gltf-model="models/plutonio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Americio -->
+        <a-marker type="pattern" url="markers/americio.patt">
+            <a-entity
+                gltf-model="models/americio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Curio -->
+        <a-marker type="pattern" url="markers/curio.patt">
+            <a-entity
+                gltf-model="models/curio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Berkelio -->
+        <a-marker type="pattern" url="markers/berkelio.patt">
+            <a-entity
+                gltf-model="models/berkelio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Californio -->
+        <a-marker type="pattern" url="markers/californio.patt">
+            <a-entity
+                gltf-model="models/californio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Einstenio -->
+        <a-marker type="pattern" url="markers/einstenio.patt">
+            <a-entity
+                gltf-model="models/einstenio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Fermio -->
+        <a-marker type="pattern" url="markers/fermio.patt">
+            <a-entity
+                gltf-model="models/fermio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Mendelevio -->
+        <a-marker type="pattern" url="markers/mendelevio.patt">
+            <a-entity
+                gltf-model="models/mendelevio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Nobelio -->
+        <a-marker type="pattern" url="markers/nobelio.patt">
+            <a-entity
+                gltf-model="models/nobelio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Laurencio -->
+        <a-marker type="pattern" url="markers/laurencio.patt">
+            <a-entity
+                gltf-model="models/laurencio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Rutherfordio -->
+        <a-marker type="pattern" url="markers/rutherfordio.patt">
+            <a-entity
+                gltf-model="models/rutherfordio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Dubnio -->
+        <a-marker type="pattern" url="markers/dubnio.patt">
+            <a-entity
+                gltf-model="models/dubnio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Seaborgio -->
+        <a-marker type="pattern" url="markers/seaborgio.patt">
+            <a-entity
+                gltf-model="models/seaborgio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Bohrio -->
+        <a-marker type="pattern" url="markers/bohrio.patt">
+            <a-entity
+                gltf-model="models/bohrio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Hassio -->
+        <a-marker type="pattern" url="markers/hassio.patt">
+            <a-entity
+                gltf-model="models/hassio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Meitnerio -->
+        <a-marker type="pattern" url="markers/meitnerio.patt">
+            <a-entity
+                gltf-model="models/meitnerio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Darmstadtio -->
+        <a-marker type="pattern" url="markers/darmstadtio.patt">
+            <a-entity
+                gltf-model="models/darmstadtio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Roentgenio -->
+        <a-marker type="pattern" url="markers/roentgenio.patt">
+            <a-entity
+                gltf-model="models/roentgenio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Copernicio -->
+        <a-marker type="pattern" url="markers/copernicio.patt">
+            <a-entity
+                gltf-model="models/copernicio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Nihonio -->
+        <a-marker type="pattern" url="markers/nihonio.patt">
+            <a-entity
+                gltf-model="models/nihonio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Flerovio -->
+        <a-marker type="pattern" url="markers/flerovio.patt">
+            <a-entity
+                gltf-model="models/flerovio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Moscovio -->
+        <a-marker type="pattern" url="markers/moscovio.patt">
+            <a-entity
+                gltf-model="models/moscovio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Livermorio -->
+        <a-marker type="pattern" url="markers/livermorio.patt">
+            <a-entity
+                gltf-model="models/livermorio.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Teneso -->
+        <a-marker type="pattern" url="markers/teneso.patt">
+            <a-entity
+                gltf-model="models/teneso.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
+
+        <!-- Oganesón -->
+        <a-marker type="pattern" url="markers/oganeson.patt">
+            <a-entity
+                gltf-model="models/oganeson.glb"
+                gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+                scale="0.5 0.5 0.5"
+                position="0 0 0">
+            </a-entity>
+        </a-marker>
 
         <!-- Cámara -->
         <a-entity camera></a-entity>
