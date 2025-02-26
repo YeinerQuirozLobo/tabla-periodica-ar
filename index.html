@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/aframe-gesture-handler@1.1.0/dist/gesture-handler.min.js"></script>
 </head>
 <body>
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;" gesture-detector>
         <!-- Hidrógeno -->
         <a-marker type="pattern" url="markers/hidrogeno.patt">
             <a-entity
@@ -21,7 +21,7 @@
         </a-marker>
 
         <!-- Helio -->
-        <a-marker type="pattern" url="markers/helio.patt">
+        <a-marker type="pattern" url="markers/helio.patt" gesture-detector>
             <a-entity
                 gltf-model="models/helio.glb"
                 gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
@@ -31,7 +31,7 @@
         </a-marker>
 
         <!-- Litio -->
-        <a-marker type="pattern" url="markers/litio.patt">
+        <a-marker type="pattern" url="markers/litio.patt" gesture-detector>
             <a-entity
                 gltf-model="models/litio.glb"
                 gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
@@ -41,7 +41,7 @@
         </a-marker>
 
         <!-- Berilio -->
-        <a-marker type="pattern" url="markers/berilio.patt">
+        <a-marker type="pattern" url="markers/berilio.patt" gesture-detector>
             <a-entity
                 gltf-model="models/berilio.glb"
                 gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
