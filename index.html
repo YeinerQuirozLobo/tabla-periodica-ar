@@ -1193,5 +1193,20 @@
         <!-- Cámara -->
         <a-entity camera></a-entity>
     </a-scene>
+<script>
+    window.onload = function () {
+        // Intenta acceder a la cámara del dispositivo
+        navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+            console.log("✅ Cámara activada correctamente");
+        })
+        .catch(function (error) {
+            alert("⚠️ Error: No se pudo acceder a la cámara. Verifica los permisos en la configuración del navegador.");
+        });
+    };
+</script>
+</body>
+</html>
+
 </body>
 </html>
