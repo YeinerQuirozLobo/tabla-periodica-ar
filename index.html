@@ -12,12 +12,11 @@
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;" gesture-detector>
         <!-- Hidrógeno -->
         <a-marker type="pattern" url="markers/hidrogeno.patt">
-            <a-entity
-                gltf-model="models/hidrogeno.glb"
+            <a-image src="imagenes/hidrogeno.jpg"
                 gesture-handler="rotationFactor: 5; minScale: 0.3; maxScale: 3; rotate: true; move: true"
                 scale="0.5 0.5 0.5"
                 position="0 0 0">
-            </a-entity>
+            </a-image>
         </a-marker>
 
         <!-- Helio -->
