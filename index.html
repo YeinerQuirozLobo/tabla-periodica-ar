@@ -470,14 +470,16 @@
 
         <!-- Plata -->
         <a-marker type="pattern" url="markers/plata.patt">
-      <a-plane        
-src="images/plata.png"
-        width="2" height="2"
-        rotation="90 0 0"
+      <a-image
+        src="images/plata.png"
+        gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
+        width="1"
+        height="1"
         position="0 0 0"
-        material="side:double; transparent:true; color:#FFFFFF">
-      </a-plane>
-    </a-marker>
+        transparent="true"
+    >
+    </a-image>
+</a-marker>
 
         <!-- Cadmio -->
         <a-marker type="pattern" url="markers/cadmio.patt">
