@@ -474,13 +474,17 @@
 
         <!-- Plata -->
         <a-marker type="pattern" url="markers/plata.patt">
-      <a-image
+    <!-- Cubo rojo para verificar que el marcador funciona -->
+    <a-box position="0 0.5 0" color="red" width="0.2" height="0.2" depth="0.2"></a-box>
+    
+    <!-- Tu imagen -->
+    <a-image
         src="images/plata.png"
-        gesture-handler="minScale: 0.5; maxScale: 2; rotate: true; move: true"
-        width="1"
-        height="1"
+        width="0.8"
+        height="0.8"
         position="0 0 0"
         transparent="true"
+        visible="true"
     >
     </a-image>
 </a-marker>
