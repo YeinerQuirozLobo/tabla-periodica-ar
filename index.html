@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imagen en AR</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imagen sobre marcador</title>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
-<body style="margin: 0; overflow: hidden;">
+<body style="margin:0; overflow:hidden;">
   <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
         <!-- Hidrógeno -->
         <a-marker type="pattern" url="markers/hidrogeno.patt">
@@ -470,13 +470,15 @@
 
         <!-- Plata -->
         <a-marker type="pattern" url="markers/plata.patt">
-     <a-image 
-        src="images/plata.png" 
-        scale="5 5 5" 
-        position="0 0 0"
-        rotation="0 0 0">
-    </a-image>
-</a-marker>
+      <a-entity rotation="-90 0 0">
+        <a-image
+          src="images/plata.png"
+          width="1" height="1"
+          position="0 0.001 0"
+          material="transparent:true; side:double">
+        </a-image>
+      </a-entity>
+    </a-marker>
 
         <!-- Cadmio -->
         <a-marker type="pattern" url="markers/cadmio.patt">
