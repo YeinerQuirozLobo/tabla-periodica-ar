@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>AR Prueba</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs>
-      <a-marker type="pattern" url="markers/plata.patt">
-        <!-- Plano rojo fijo -->
-        <a-plane color="red" width="1" height="1" rotation="-90 0 0"></a-plane>
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba AR.js con HIRO</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+    <!-- Marcador HIRO -->
+    <a-marker type="pattern" url="markers/hiro.patt">
+      <a-plane src="images/plata.jpg" width="1" height="1" rotation="-90 0 0"></a-plane>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
 </html>
