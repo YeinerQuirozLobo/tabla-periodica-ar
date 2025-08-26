@@ -2,16 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Prueba AR.js con HIRO</title>
+  <title>Hidrógeno AR</title>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+  <style>
+    body { margin: 0; overflow: hidden; }
+  </style>
 </head>
-<body style="margin:0; overflow:hidden;">
+<body>
   <a-scene embedded arjs="debugUIEnabled: false;">
-    <!-- No usamos .patt externo, sino el marcador HIRO que ya viene en AR.js -->
-    <a-marker preset="hiro">
-      <a-box color="red" depth="0.5" height="0.5" width="0.5" position="0 0.25 0"></a-box>
+    
+    <!-- Marcador personalizado: Hidrógeno -->
+    <a-marker type="pattern" url="markers/hidrogeno.patt">
+      <!-- Imagen que aparecerá al detectar el marcador -->
+      <a-plane src="images/hidrogeno.jpg" 
+               width="1" 
+               height="1" 
+               position="0 0 0" 
+               rotation="-90 0 0">
+      </a-plane>
     </a-marker>
+
+    <!-- Cámara -->
     <a-entity camera></a-entity>
   </a-scene>
 </body>
