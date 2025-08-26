@@ -2,64 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla Periódica AR Móvil</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <style>
-        /* Estilos móviles */
         body {
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background: #000;
             font-family: Arial, sans-serif;
         }
-        
         .loading {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: white;
-            font-size: 18px;
+            color: black;
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
-            z-index: 1000;
-        }
-        
-        .instructions {
-            position: fixed;
-            bottom: 20px;
-            left: 0;
-            right: 0;
-            color: white;
-            text-align: center;
-            background: rgba(0,0,0,0.7);
-            padding: 10px;
-            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <!-- Mensaje de carga -->
-    <div class="loading" id="loading">🎥 Activando cámara...</div>
-    
-    <!-- Instrucciones -->
-    <div class="instructions">
-        Apunta la cámara al marcador de un elemento químico
-    </div>
+    <div class="loading" id="loading">🔍 Buscando marcadores...</div>
 
     <a-scene 
         embedded 
-        arjs="sourceType: webcam; detectionMode: mono; matrixCodeType: 3x3;"
-        renderer="logarithmicDepthBuffer: true;"
+        arjs="sourceType: webcam; debugUIEnabled: false;"
         vr-mode-ui="enabled: false"
-    >
-        <!-- Precargar assets -->
-        <a-assets>
-            <img id="plata-img" src="images/plata.png">
-<img id="hidrogeno-img" src="images/hidrogeno.jpg">
-        </a-assets>
 
         <!-- Hidrógeno -->
         <a-marker type="pattern" url="markers/hidrogeno.patt">
@@ -525,28 +498,14 @@
         </a-marker>
 
         <!-- Plata -->
-     <a-marker 
-            type="pattern" 
-            url="markers/plata.patt"
-            emitevents="true"
-            id="marker-plata"
-        >
-            <a-entity
-                position="0 0 0"
-                rotation="-90 0 0"
-                scale="0.8 0.8 0.8"
-            >
-                <a-plane
-                    src="#plata-img"
-                    width="1.2"
-                    height="1.2"
-                    position="0 0 0.01"
-                    material="shader: flat; transparent: true; alphaTest: 0.5;"
-                    class="clickable"
-                    gesture-handler="minScale: 0.5; maxScale: 2;"
-                ></a-plane>
-            </a-entity>
-        </a-marker>
+     <a-marker type="pattern" url="markers/plata.patt">
+            <a-image
+    src="https://placehold.co/600x600/003366/white/png?text=PLATA"
+    width="1.0"
+    height="1.0"
+    position="0 0 0"
+    rotation="0 0 0"
+></a-image>
 
         <!-- Cadmio -->
         <a-marker type="pattern" url="markers/cadmio.patt">
@@ -1258,51 +1217,37 @@
             </a-entity>
         </a-marker>
 
-        <a-entity camera="fov: 80; zoom: 1;" arjs-camera></a-entity>
+        <a-entity camera></a-entity>
     </a-scene>
 
     <script>
-    // OPTIMIZACIÓN PARA MÓVILES
-    document.addEventListener('DOMContentLoaded', function() {
-        const loading = document.getElementById('loading');
-        const scene = document.querySelector('a-scene');
-        
-        // Eventos para móvil
-        if (scene.hasLoaded) {
-            initAR();
-        } else {
-            scene.addEventListener('loaded', initAR);
-        }
-        
-        function initAR() {
-            // Solicitar cámara
-            navigator.mediaDevices.getUserMedia({ video: true })
-            .then(function(stream) {
-                loading.style.display = 'none';
-                console.log('✅ Cámara móvil activada');
-            })
-            .catch(function(error) {
-                loading.textContent = '❌ Error: Permite el acceso a la cámara';
-                console.error('Error cámara móvil:', error);
-            });
-        }
-        
-        // Optimizar rendimiento en móviles
-        window.addEventListener('load', function() {
-            // Reducir calidad en móviles para mejor performance
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                const renderer = scene.renderer;
-                renderer.setPixelRatio(1); // Reducir calidad en móviles
-            }
-        });
-        
-        // Eventos táctiles para móvil
-        document.querySelector('a-scene').addEventListener('touchstart', function() {
-            // Vibrar al tocar (solo en móviles)
-            if (navigator.vibrate) {
-                navigator.vibrate(50);
-            }
-        });
+    // DEBUG SIMPLE
+    console.log("🟢 Iniciando AR móvil");
+    
+    const loading = document.getElementById('loading');
+    
+    // Verificar si la imagen existe
+    const testImage = new Image();
+    testImage.onload = function() {
+        console.log("✅ Imagen plata.jpg cargada correctamente");
+        loading.textContent = "✅ Imagen cargada - Apunta al marcador";
+    };
+    testImage.onerror = function() {
+        console.error("❌ ERROR: Imagen plata.jpg no encontrada");
+        loading.innerHTML = "❌ Error: imagen no encontrada<br>Verifica: images/plata.jpg";
+    };
+    testImage.src = "images/plata.jpg";
+    
+    // Eventos de AR.js
+    const scene = document.querySelector('a-scene');
+    scene.addEventListener('loaded', function() {
+        console.log("🎬 Escena AR cargada");
+        loading.style.display = 'none';
+    });
+    
+    // Detección de marcadores
+    scene.addEventListener('markerFound', function(e) {
+        console.log("🎯 Marcador encontrado:", e.target.id);
     });
     </script>
 </body>
