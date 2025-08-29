@@ -12,10 +12,21 @@
 <body>
   <a-scene embedded arjs="debugUIEnabled: false;">
     
-    <!-- Marcador personalizado: Hidrógeno -->
+    <!-- Marcador personalizado: Hidrogeno -->
     <a-marker type="pattern" url="markers/hidrogeno.patt">
       <!-- Imagen que aparecerá al detectar el marcador -->
       <a-plane src="images/hidrogeno.jpg" 
+               width="1" 
+               height="1" 
+               position="0 0 0" 
+               rotation="-90 0 0">
+      </a-plane>
+    </a-marker>
+
+<!-- Marcador personalizado: Natalia -->
+    <a-marker type="pattern" url="markers/nat.patt">
+      <!-- Imagen que aparecerá al detectar el marcador -->
+      <a-plane src="images/nat.jpg" 
                width="1" 
                height="1" 
                position="0 0 0" 
@@ -34,6 +45,16 @@
       </a-plane>
     </a-marker>
 
+<!-- Marcador personalizado: Litio -->
+    <a-marker type="pattern" url="markers/litio.patt">
+      <!-- Imagen que aparecerá al detectar el marcador -->
+      <a-plane src="images/litio.jpg" 
+               width="1" 
+               height="1" 
+               position="0 0 0" 
+               rotation="-90 0 0">
+      </a-plane>
+    </a-marker>
     <!-- Cámara -->
     <a-entity camera></a-entity>
   </a-scene>
