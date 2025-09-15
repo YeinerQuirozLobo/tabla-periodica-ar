@@ -3,30 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Tabla periódica en Realidad Aumentada</title>
-  <script src="https://aframe.io/releases/2.2.0/aframe.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.2/aframe/build/aframe-ar.js"></script>
   <style>
       body { margin: 0; overflow: hidden; }
 
-      /* Estilo de la marca de agua */
       .marca-agua {
         position: fixed;
         bottom: 10px;
         left: 10px;
-        background: rgba(0, 0, 0, 0.4); /* fondo semi-transparente */
+        background: rgba(0, 0, 0, 0.4);
         color: white;
         padding: 6px 10px;
         border-radius: 8px;
         font-size: 12px;
         font-family: Arial, sans-serif;
-        pointer-events: none; /* para que no interfiera con clics */
+        pointer-events: none;
       }
   </style>
 </head>
 <body>
 
- <!-- Escena de AR.js -->
-  <a-scene embedded arjs>
+  <a-scene embedded arjs="sourceType: webcam;">
       
     <!-- Marcador personalizado: Hidrogeno -->
     <a-marker type="pattern" url="markers/hidrogeno.patt">
@@ -1253,7 +1251,6 @@
 
   </a-scene>
 
-  <!-- Marca de agua -->
   <div class="marca-agua">
     Proyecto de la I. E. San José del Citará - Yeiner Quiroz Lobo
   </div>
